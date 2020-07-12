@@ -1,0 +1,83 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b7974d27-3c4e-4f68-9e66-2e7cd6d3c0bc</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>dataset.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>StackGAN-V2</Name>
+    <RootNamespace>StackGAN-V2</RootNamespace>
+    <InterpreterId>CondaEnv|CondaEnv|pyt3.6</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="code\datasets.py" />
+    <Compile Include="code\main.py" />
+    <Compile Include="code\miscc\config.py" />
+    <Compile Include="code\miscc\preprocess_birds.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="code\miscc\preprocess_flowers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="code\miscc\utils.py" />
+    <Compile Include="code\miscc\__init__.py" />
+    <Compile Include="code\model.py" />
+    <Compile Include="code\trainer.py" />
+    <Compile Include="config.py" />
+    <Compile Include="dataset.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="models.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pre-postProcessing\CNN_RNN_Embeddings.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pre-postProcessing\eval.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pre-postProcessing\birdsPreprocessing.py" />
+    <Compile Include="StackGAN_V2.py" />
+    <Compile Include="trainGPU.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="code\" />
+    <Folder Include="code\cfg\" />
+    <Folder Include="code\miscc\" />
+    <Folder Include="pre-postProcessing\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="code\.gitignore" />
+    <Content Include="code\cfg\bedroom_3stages_color.yml" />
+    <Content Include="code\cfg\birds_3stages.yml" />
+    <Content Include="code\cfg\cat_3stages_color.yml" />
+    <Content Include="code\cfg\church_3stages_color.yml" />
+    <Content Include="code\cfg\dog_3stages_color.yml" />
+    <Content Include="code\cfg\eval_birds.yml" />
+    <Content Include="code\cfg\eval_dog.yml" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|pyt3.6" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
