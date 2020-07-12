@@ -1,13 +1,13 @@
 # StackGAN-V2
  
- Pytorch implementation for reproducing StackGAN_v2 results in the paper [StackGAN++: Realistic Image Synthesis with Stacked Generative Adversarial Networks](https://arxiv.org/abs/1710.10916) by Han Zhang*, Tao Xu*, Hongsheng Li, Shaoting Zhang, Xiaogang Wang,   Xiaolei Huang, Dimitris Metaxas.
+reproducing the results from StackGAN_v2 in the paper [StackGAN++: Realistic Image Synthesis with Stacked Generative Adversarial Networks](https://arxiv.org/abs/1710.10916) by Han Zhang*, Tao Xu*, Hongsheng Li, Shaoting Zhang, Xiaogang Wang,   Xiaolei Huang, Dimitris Metaxas.
 
 ### Dependencies
-python 3.6+
+- python 3.6+
 
--Pytorch
+- Pytorch
 
--python-opencv (cv2)
+- python-opencv (cv2)
 
 **Data**
 
