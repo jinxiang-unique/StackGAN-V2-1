@@ -16,8 +16,8 @@ python 3.6+
 **Pretrained Model**
 - [StackGAN-v2 for bird](https://drive.google.com/file/d/1r1_pNwWQcKXQ-vwTUSvLmFJmfGipxHY4/view?usp=sharing).
 
-**References**
-Demonstration [website](http://104.196.254.208/)
+**Demonstration**
+[website](http://104.196.254.208/)
 
 **References**
 - StackGAN++: Realistic Image Synthesis with Stacked Generative Adversarial Networks  [Paper](https://arxiv.org/abs/1710.10916) [Code](https://github.com/hanzhanggit/StackGAN-v2)
