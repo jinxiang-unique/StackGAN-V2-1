@@ -23,7 +23,7 @@ class BirdsDataset(Dataset):
 
         # load the embeddings
         #self.Embeddings = np.load("data/CNN_RNN_Embeddings.npy", allow_pickle=True)
-        pickleIn = open(join(path, "char-CNN-RNN-embeddings.pickle"), "rb")
+        pickleIn = open("data/char-CNN-RNN-embeddings.pickle", "rb")
         self.Embeddings = np.array(pickle.load(pickleIn, encoding="latin1"))
 
     def prepEmbeddings(self, embeddings):
