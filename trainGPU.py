@@ -252,6 +252,11 @@ class StackGANv2():
         cv2.imwrite(f"images/{name}{epoch}.png", canvas.cpu().numpy()) # cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 if __name__ == "__main__":
-
+    
+    import os
+    os.mkdir("data")
+    os.mkdir("images")
+    os.mkdir("models")
+    
     gan = StackGANv2()
     gan.train(cfg.epochs + 1, cfg.batchSize, cfg.saveInterval)

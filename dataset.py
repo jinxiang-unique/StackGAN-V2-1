@@ -32,7 +32,7 @@ class BirdsDataset(Dataset):
         embedding = embeddings[idx]
         return torch.Tensor(embedding)
 
-    # oringal way the research got the embeddings
+    # oringal way the researches got the embeddings
     def prepEmbeddings2(self, embeddings, sample_num = 4):
 
         embedding_num, _ = embeddings.shape
