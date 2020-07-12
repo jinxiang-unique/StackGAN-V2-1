@@ -4,8 +4,8 @@ reproducing the results from StackGAN_v2 in the paper [StackGAN++: Realistic Ima
 
 ### Dependencies
 - python 3.6+
-- Pytorch
-- python-opencv (cv2)
+- Pytorch 1.4+
+- opencv-python (cv2)
 
 **Data**
 
